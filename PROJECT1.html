@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zambia Jobs Portal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      background: white;
+      color: #000;
+      position: relative;
+      overflow-x: hidden;
+    }
+/* Normal top center logo */
+header .top-logo {
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  z-index: 10; /* above watermark */
+}
+
+header .top-logo img {
+  width: 200px;   /* smaller width for header logo */
+  height: auto;
+}
+
+/* Watermark logo centered */
+.watermark-logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.19;         /* very faint */
+  pointer-events: none;  /* so clicks pass through */
+  z-index: 1;            /* behind content */
+  user-select: none;     /* can't select */
+  width: 400px;          /* big size for watermark */
+  max-width: 80vw;
+}
+
+
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      background: #f3e8ff;
+      padding: 10px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #6b21a8;
+      font-weight: bold;
+    }
+
+    .slider-container {
+      width: 100%;
+      overflow: hidden;
+      margin: 10px 0;
+    }
+
+    .slider {
+      display: flex;
+      animation: slideLeft 20s linear infinite;
+    }
+
+    .slider img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    @keyframes slideLeft {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-300%); }
+    }
+
+    .news-ticker {
+      background-color: #d8b4fe;
+      color: #000;
+      padding: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    main {
+      padding: 30px 10px;
+      text-align: center;
+    }
+
+    section {
+      margin: 40px auto;
+      max-width: 900px;
+      text-align: center;
+    }
+
+    section img {
+      width: 100%;
+      max-width: 700px;
+      margin-top: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #6b21a8;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background: #e9d5ff;
+      color: #6b21a8;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #d8b4fe;
+    }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 20px;
+  max-width: 1100px;
+  margin: 10 auto;        /* Centers it horizontally */
+  box-sizing: border-box;
+}
+
+    .grid-item {
+      background: #f3e8ff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 10px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .grid-item:hover {
+      transform: scale(1.05);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .grid-item p {
+      margin-top: 10px;
+      color: #6b21a8;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #f3e8ff;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<div style="position: fixed; top: 10px; left: 10px; font-weight: bold; font-size: 16px; color: purple; z-index: 1000;">
+  HIRE CITIZENS & FIND JOBS WITH SANDE_TECH_SOLUTIONS
+</div>
+
+  <body>
+  <!-- Watermark logo -->
+  <img src="l.jpeg" alt="Watermark Logo" class="watermark-logo" />
+
+  <header>
+    <div class="top-logo">
+      <img src="1.png" alt="Site Logo" />
+    </div>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<section id="connect" style="margin-top: 50px; text-align: center;">
+  <h2>Follow Me</h2>
+
+  <!-- Social Media Icons in Purple -->
+  <div style="margin: 20px 0;">
+    <a href="https://x.com/realsandetendai?t=oNjGp-Zd4Ja6ISdSRUaRWw&s=09" target="_blank" style="margin: 10px; font-size: 26px; color: purple;">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <a href="https://www.facebook.com/share/1AtDDKpnT3/" target="_blank" style="margin: 10px; font-size: 26px; color: purple;">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://www.instagram.com/tendaisofficial?igsh=aTB2cjF2NmdybXRh" target="_blank" style="margin: 10px; font-size: 26px; color: purple;">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://www.tiktok.com/@tendaisofficial?_t=ZM-8wrljIvzqXF&_r=1" target="_blank" style="margin: 10px; font-size: 26px; color: purple;">
+      <i class="fab fa-tiktok"></i>
+    </a>
+    <a href="https://wa.me/+260974021114" target="_blank" style="margin: 10px; font-size: 26px; color: purple;">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+ <a href="https://wa.me/+260775506831" target="_blank" style="margin: 10px; font-size: 26px; color: purple;">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Direct Phone Call in Purple -->
+  <div style="margin-top: 30px;">
+    <a href="tel:+260775506831" style="font-size: 22px; text-decoration: none; color: purple;">
+      <i class="fas fa-phone-alt"></i> +260 775 506 831
+    </a>
+  </div>
+</section>
+
+
+</body>
+
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#policy">Policy</a>
+      <a href="#jobs">Jobs</a>
+      <a href="#employee">Employee</a>
+ <a href="#donate">Donate</a>
+    </nav>
+  </header>
+
+  <section class="slider-container">
+    <div class="slider">
+      <img src="g1.webp" alt="Slide 1">
+      <img src="g3.jpg" alt="Slide 2">
+      <img src="g2.jpg" alt="Slide 3">
+<img src="g4.jpg" alt="Slide 4">
+ <img src="G5.webp" alt="Slide 3">
+<img src="G6.jpg" alt="Slide 4">
+    </div>
+  </section>
+
+  <div class="news-ticker">
+    <marquee>🚀 Welcome! Companies can register vacancies. Citizens can submit skills and filter jobs easily.</marquee>
+  </div>
+
+  <main>
+    <section id="purpose">
+      <h1>Empowering Zambia Through Jobs & Skills</h1>
+      <p>This platform allows companies to register available vacancies and search for potential employees based on skills or experience.</p>
+      <p>It also supports school dropouts, graduates, and skilled individuals—both teens and adults—to submit their CVs and find jobs that match their talents and professions.</p>
+    </section>
+
+ <section id="about">
+  <h2>About</h2>
+  <img src="job.jpg" alt="About Image" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 10px auto;" />
+  <p>We connect talent with opportunity across Zambia, making it easier for companies and job seekers to find each other.</p>
+</section>
+
+
+    <section id="policy">
+      <h2>Policy</h2>
+    <img src="guide.png" alt="About Image" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 10px auto;" />
+      <p>Read our guidelines for ethical hiring, data privacy, and how we protect both employers and job seekers.</p>
+    </section>
+
+    <section id="jobs">
+      <h2>Job Filters</h2>
+     <img src="skills.png" alt="About Image" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 10px auto;" />
+      <p>Search for jobs by industry, skill, or profession. Find what suits you best.</p>
+      <a class="btn" href="#">Search Jobs</a>
+      <a class="btn" href="#">Filter by Profession</a>
+    </section>
+
+   <section id="employee">
+  <h2>Submit Skills & CV</h2>
+     <img src="scv.jfif" alt="Submit Skills" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 10px auto;" />
+  <p>Submit your details so companies can find you. Especially for school dropouts, graduates & experienced individuals.</p>
+
+  <div style="max-width: 500px; margin: auto;">
+    <input type="text" id="fullName" placeholder="Your Full Name" required style="width: 100%; padding: 10px; margin: 10px 0;" />
+    <input type="email" id="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin: 10px 0;" />
+    <input type="text" id="profession" placeholder="Your Profession / Skill" required style="width: 100%; padding: 10px; margin: 10px 0;" />
+    <textarea id="bio" placeholder="Short Bio or Message" rows="4" style="width: 100%; padding: 10px; margin: 10px 0;"></textarea>
+    <input type="file" name="CV Upload (Optional)" style="margin: 10px 0;" />
+    <br>
+    <button onclick="sendToAdmin()" class="btn">Submit to Admin</button>
+  </div>
+
+  <script>
+    function sendToAdmin() {
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const profession = document.getElementById('profession').value;
+      const bio = document.getElementById('bio').value;
+
+      const subject = encodeURIComponent(`CV Submission from ${fullName}`);
+      const body = encodeURIComponent(
+        `Name: ${fullName}\nEmail: ${email}\nProfession/Skill: ${profession}\n\nBio/Message:\n${bio}`
+      );
+
+      const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=tendaisande729@gmail.com&su=${subject}&body=${body}`;
+      window.open(mailtoLink, '_blank');
+    }
+  </script>
+</section>
+
+
+<section id="company-submit" style="margin-top: 60px;">
+  <h2>Companies: Submit Available Vacancies</h2>
+ <img src="hiring.jpg" alt="Submit Vacancy" style="max-width: 300px; width: 100%; height: auto; display: block; margin: 10px auto;" />
+  <p>Employers can register available vacancies to reach skilled individuals across Zambia.</p>
+
+  <div style="max-width: 500px; margin: auto;">
+    <input type="text" id="companyName" placeholder="Company Name" required style="width: 100%; padding: 10px; margin: 10px 0;" />
+    <input type="email" id="companyEmail" placeholder="Contact Email" required style="width: 100%; padding: 10px; margin: 10px 0;" />
+    <input type="text" id="jobTitle" placeholder="Job Title" required style="width: 100%; padding: 10px; margin: 10px 0;" />
+    <input type="text" id="skills" placeholder="Required Skills" required style="width: 100%; padding: 10px; margin: 10px 0;" />
+    <textarea id="jobDescription" placeholder="Job Description" rows="4" required style="width: 100%; padding: 10px; margin: 10px 0;"></textarea>
+    <br>
+    <button onclick="sendToGmail()" class="btn">Submit Vacancy</button>
+  </div>
+
+  <script>
+    function sendToGmail() {
+      const name = document.getElementById('companyName').value;
+      const email = document.getElementById('companyEmail').value;
+      const title = document.getElementById('jobTitle').value;
+      const skills = document.getElementById('skills').value;
+      const description = document.getElementById('jobDescription').value;
+
+      const subject = encodeURIComponent(`Job Vacancy: ${title} at ${name}`);
+      const body = encodeURIComponent(
+        `Company Name: ${name}\nContact Email: ${email}\nJob Title: ${title}\nRequired Skills: ${skills}\nJob Description:\n${description}`
+      );
+
+      const mailtoLink = `https://mail.google.com/mail/?view=cm&fs=1&to=tendaisande729@gmail.com&su=${subject}&body=${body}`;
+      window.open(mailtoLink, '_blank');
+    }
+  </script>
+</section>
+
+
+    <!-- NEW FILTER & GRID SECTION -->
+    <section id="filter">
+      <h2>Find Matches</h2>
+      <p>Filter based on your role to find available vacancies or job seekers.</p>
+
+      <div style="margin: 20px 0;">
+        <label><input type="radio" name="filterRole" value="citizen" checked> Select Button to (Find Jobs)</label>
+        <label style="margin-left: 20px;"><input type="radio" name="filterRole" value="company"> Select Button to (Find Job Seekers)</label>
+      </div>
+
+      <div id="gridContainer" class="grid-container">
+        <!-- Dynamic grid content goes here -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Tech Solutions Zambia | Empowering People Through Jobs</p>
+  </footer>
+
+  <script>
+    const gridContainer = document.getElementById("gridContainer");
+    const radioButtons = document.getElementsByName("filterRole");
+
+    const jobVacancies = [
+      { img: "vac1.jpg", title: "Chef - Lusaka" },
+      { img: "vac2.jpg", title: "Plumber - Kitwe" },
+      { img: "vac3.jpg", title: "Receptionist - Ndola" },
+      { img: "vac4.jpg", title: "Electrician - Livingstone" },
+      { img: "vac5.jpg", title: "Cashier - Kabwe" },
+      { img: "vac6.jpg", title: "Welder - Chipata" }
+    ];
+
+    const jobSeekers = [
+      { img: "seeker1.jpg", title: "John - Skilled Carpenter - Lusaka" },
+      { img: "seeker2.jpg", title: "Grace - Tailor - Ndola" },
+      { img: "seeker3.jpg", title: "Mike - Auto Mechanic - Chipata" },
+      { img: "seeker4.jpg", title: "Esther - Chef - Mongu" },
+      { img: "seeker5.jpg", title: "Brian - Security Guard - Choma" },
+      { img: "seeker6.jpg", title: "Lucy - Teacher - Mbala" }
+    ];
+
+    function renderGrid(dataArray) {
+      gridContainer.innerHTML = "";
+      dataArray.forEach(item => {
+        const div = document.createElement("div");
+        div.className = "grid-item";
+        div.innerHTML = `<img src="${item.img}" alt="${item.title}" /><p>${item.title}</p>`;
+        gridContainer.appendChild(div);
+      });
+    }
+
+    radioButtons.forEach(btn => {
+      btn.addEventListener("change", () => {
+        renderGrid(btn.value === "citizen" ? jobVacancies : jobSeekers);
+      });
+    });
+
+    // Initial load
+    renderGrid(jobVacancies);
+  </script>
+
+<section id="donate" style="margin: 60px auto; max-width: 1000px; text-align: center;">
+  <h2 style="color: purple;">Support Our Mission</h2>
+  <p style="margin-bottom: 30px;">Tap your network to donate via *115#, option 2 (GET CASH)</p>
+  <p style="margin-bottom: 30px;"> 0966625837 (MTN), 1989928 (AIRTEL) & 41452133 (ZAMTEL)</p>
+<p style="margin-bottom: 30px;"> DEALER ID: TENDAI SANDE</p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+    <!-- MTN -->
+    <div style="flex: 1 1 250px; max-width: 300px;">
+      <a href="tel:*115#" style="text-decoration: none;">
+        <div style="width: 100%; height: 200px; overflow: hidden; border-radius: 12px;">
+          <img src="mtn.jpeg" alt="MTN Support" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <p style="margin-top: 10px; font-weight: bold; color: purple;">Donate via MTN</p>
+      </a>
+    </div>
+
+    <!-- Airtel -->
+    <div style="flex: 1 1 250px; max-width: 300px;">
+      <a href="tel:*115#" style="text-decoration: none;">
+        <div style="width: 100%; height: 200px; overflow: hidden; border-radius: 12px;">
+          <img src="airtel.png" alt="Airtel Support" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <p style="margin-top: 10px; font-weight: bold; color: purple;">Donate via Airtel</p>
+      </a>
+    </div>
+
+    <!-- Zamtel -->
+    <div style="flex: 1 1 250px; max-width: 300px;">
+      <a href="tel:*115#" style="text-decoration: none;">
+        <div style="width: 100%; height: 200px; overflow: hidden; border-radius: 12px;">
+          <img src="zamtel.jpg" alt="Zamtel Support" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <p style="margin-top: 10px; font-weight: bold; color: purple;">Donate via Zamtel</p>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+</body>
+</html>
